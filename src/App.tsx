@@ -1,20 +1,11 @@
-import { useState } from "react";
+import ReactMarkdown from "react-markdown";
+import markdown from "./assets/markdown.md?raw";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
-            <p className="h1 underline">Portfolio</p>
-            <p>{count}</p>
-            <button
-                onClick={() => {
-                    setCount(count + 1);
-                }}
-                className="btn btn-primary"
-            >
-                push
-            </button>
+            <p className="m-4 text-xl font-bold underline">Portfolio</p>
+            <ReactMarkdown className="markdown">{markdown}</ReactMarkdown>
         </>
     );
 }
