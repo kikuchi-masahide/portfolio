@@ -33,7 +33,7 @@
 
 現在有効期間外ではありますが、2020 年 5 月に実施された第 3 回アルゴリズム実技検定(PAST)にて 94 点/EXPERT ランクを獲得いたしました。
 
-![Alt text](/image.png)
+![Alt text](https://kikuchi-masahide.github.io/portfolio/image.png)
 
 ---
 
