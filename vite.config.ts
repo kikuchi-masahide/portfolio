@@ -5,6 +5,7 @@ export default defineConfig({
     plugins: [react()],
     root: "src",
     base: "https://kikuchi-masahide.github.io/portfolio/",
+    publicDir: "public",
     build: {
         outDir: "..",
         assetsDir: "./dist",
