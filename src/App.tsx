@@ -20,7 +20,14 @@ function App() {
                     の各リポジトリの概要説明です。
                 </p>
                 <Hr />
-                <IndexList items={["competitive", "HappyShooting"]} />
+                <IndexList
+                    items={[
+                        "competitive",
+                        "HappyShooting",
+                        "myeditor",
+                        "simple-todo",
+                    ]}
+                />
                 <Hr />
                 <Part
                     title="competitive"
@@ -44,7 +51,7 @@ function App() {
                             月に実施された第 3 回アルゴリズム実技検定(PAST)にて
                             94 点/EXPERT ランクを獲得いたしました。
                         </p>
-                        <Img src="image.png" alt="レーティング推移" />
+                        <Img src="./image.png" alt="レーティング推移" />
                     </Section>
                 </Part>
                 <Hr />
@@ -95,10 +102,46 @@ function App() {
                         </p>
                     </Section>
                 </Part>
-                <Part title="simple-todo" href="https://github.com/kikuchi-masahide/simple-todo">
+                <Hr />
+                <Part
+                    title="myeditor"
+                    href="https://github.com/kikuchi-masahide/myeditor"
+                >
                     <Section title="概要">
                         <p>
-                            my-editorと同様に、バイトにてFlatterの知識が必要となったため、勉強のために作成したアプリです。
+                            アルバイトにてLaravelとVue.jsを用いることになった際、それらを初めて学習し、アウトプットとして作成いたしました。シンプルなテキストエディタです。作成途中で業務開始レベルに相当すると判断されたため細かい点が未実装・未修正のままですが、根本的な機能については完成しております。
+                        </p>
+                    </Section>
+                    <Section title="主な更新期間">2022年12月</Section>
+                    <Section title="関連技術・関連知識">
+                        <SkillsList
+                            items={[
+                                "PHP",
+                                "Laravel",
+                                "JavaScript/TypeScript",
+                                "Vue.js",
+                                "Docker",
+                                "MySql",
+                                "Bootstrap",
+                            ]}
+                        />
+                    </Section>
+                    <Section title="工夫した点">
+                        <p>
+                            ログインするデバイスを1つに限定する、Cookieとサーバの両方の保存方式を活用するなど、データの競合を防ぐための工夫を行いました。
+                            <br />
+                            また、タグ付けに関する多対多の関係のデータベース化など、データベースの設計についてもアドバイスを頂きながら勉強できました。
+                        </p>
+                    </Section>
+                </Part>
+                <Hr />
+                <Part
+                    title="simple-todo"
+                    href="https://github.com/kikuchi-masahide/simple-todo"
+                >
+                    <Section title="概要">
+                        <p>
+                            my-editorと同様に、アルバイトにてFlatterの知識が必要となったため、勉強のために作成したアプリです。
                         </p>
                     </Section>
                     <Section title="デモ動画">
@@ -106,12 +149,20 @@ function App() {
                     </Section>
                     <Section title="主な更新期間">2023 年5 月</Section>
                     <Section title="関連技術・関連知識">
-                        <SkillsList items={["Flatter", "Dart", "PHP", "Laravel", "Docker"]} />
+                        <SkillsList
+                            items={[
+                                "Flatter",
+                                "Dart",
+                                "PHP",
+                                "Laravel",
+                                "Docker",
+                            ]}
+                        />
                     </Section>
                     <Section title="工夫した点">
                         <p>
                             TODOアプリの機能として工夫した点は、タスク同士に親/子の関係を定義できるようにしたことです。それに関し、分かりやすい表示やバグを埋め込まない(親子関係のループの作成を防ぐ、など)ことを心がけました。
-                            <br/>
+                            <br />
                             プログラミング面では、MVVMパターンを初めて用いたことが挑戦でした。また、Undo/Redoのためにコマンドパターンを導入する、データの保存先としてLaravelサーバとローカルファイルを簡単に切り替えられるようリポジトリパターンを導入する、なども行いました。
                         </p>
                     </Section>
