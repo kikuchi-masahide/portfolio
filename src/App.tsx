@@ -60,12 +60,12 @@ function App() {
                             のシューティングゲームです。
                         </p>
                     </Section>
-                    <Section title="配布">
+                    {/* <Section title="配布">
                         <p>TODO:配布場所 here</p>
                     </Section>
                     <Section title="デモ動画">
                         <p>TODO:デモ動画 here</p>
-                    </Section>
+                    </Section> */}
                     <Section title="主な更新期間">2020 年~2022 年</Section>
                     <Section title="関連技術・関連知識">
                         <SkillsList
@@ -92,6 +92,27 @@ function App() {
                         </p>
                         <p>
                             また、DirectX12の仕様の理解不足により、描画処理の最適化や各エンティティの描画コンポーネントを扱う仕様設計に課題が多く残りました。その結果、描画内容自体は簡素なものですが、テスト配布の際ノートパソコンでの処理速度が60fpsに追いつかないなどの問題が生じました。パイプライン等リソースの切り替え処理の最適化と、そのためのコンポーネント処理設計の改善が必要と考えております。
+                        </p>
+                    </Section>
+                </Part>
+                <Part title="simple-todo" href="https://github.com/kikuchi-masahide/simple-todo">
+                    <Section title="概要">
+                        <p>
+                            my-editorと同様に、バイトにてFlatterの知識が必要となったため、勉強のために作成したアプリです。
+                        </p>
+                    </Section>
+                    <Section title="デモ動画">
+                        <Img src="./video.mp4" alt="simple-todoのデモ動画" />
+                    </Section>
+                    <Section title="主な更新期間">2023 年5 月</Section>
+                    <Section title="関連技術・関連知識">
+                        <SkillsList items={["Flatter", "Dart", "PHP", "Laravel", "Docker"]} />
+                    </Section>
+                    <Section title="工夫した点">
+                        <p>
+                            TODOアプリの機能として工夫した点は、タスク同士に親/子の関係を定義できるようにしたことです。それに関し、分かりやすい表示やバグを埋め込まない(親子関係のループの作成を防ぐ、など)ことを心がけました。
+                            <br/>
+                            プログラミング面では、MVVMパターンを初めて用いたことが挑戦でした。また、Undo/Redoのためにコマンドパターンを導入する、データの保存先としてLaravelサーバとローカルファイルを簡単に切り替えられるようリポジトリパターンを導入する、なども行いました。
                         </p>
                     </Section>
                 </Part>
