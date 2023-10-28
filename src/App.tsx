@@ -167,6 +167,34 @@ function App() {
                         </p>
                     </Section>
                 </Part>
+                <Hr />
+                <Part
+                    title="portfolio"
+                    href="https://github.com/kikuchi-masahide/portfolio"
+                >
+                    <Section title="概要">
+                        <p>このページです。Reactを用いて作成いたしました。</p>
+                    </Section>
+                    <Section title="主な更新期間">2023 年10 月</Section>
+                    <Section title="関連技術・関連知識">
+                        <SkillsList
+                            items={[
+                                "React",
+                                "TypeScript",
+                                "Tailwind CSS",
+                                "Vite",
+                            ]}
+                        />
+                    </Section>
+                    <Section title="工夫した点">
+                        <p>
+                            Github
+                            Pagesを用いる上での制約のための、Viteの細かい設定に一番苦労しました。ドキュメントとGithub
+                            Copilotの力を借り、最終的にはGithub
+                            actionsによる自動デプロイを実現いたしました。
+                        </p>
+                    </Section>
+                </Part>
             </div>
             <ScrollButton />
         </>
