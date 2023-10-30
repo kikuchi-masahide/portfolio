@@ -8,6 +8,7 @@ export default function Link(props: LinkPropsType) {
         <a
             href={props.href}
             className="text-blue-500 underline hover:text-blue-600"
+            target="_blank"
         >
             {props.children}
         </a>
