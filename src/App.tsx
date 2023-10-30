@@ -6,6 +6,8 @@ import Part from "./components/part";
 import Section from "./components/section";
 import Img from "./components/img";
 import SkillsList from "./components/skillsList";
+import img_png from "./assets/image.png";
+import video_mp4 from "./assets/video.mp4";
 
 function App() {
     return (
@@ -51,7 +53,7 @@ function App() {
                             月に実施された第 3 回アルゴリズム実技検定(PAST)にて
                             94 点/EXPERT ランクを獲得いたしました。
                         </p>
-                        <Img src="./image.png" alt="レーティング推移" />
+                        <Img src={img_png} alt="レーティング推移" />
                     </Section>
                 </Part>
                 <Hr />
@@ -145,7 +147,7 @@ function App() {
                         </p>
                     </Section>
                     <Section title="デモ動画">
-                        <Img src="./video.mp4" alt="simple-todoのデモ動画" />
+                        <Img src={video_mp4} alt="simple-todoのデモ動画" />
                     </Section>
                     <Section title="主な更新期間">2023 年5 月</Section>
                     <Section title="関連技術・関連知識">
