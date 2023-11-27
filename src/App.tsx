@@ -144,7 +144,7 @@ function App() {
                 >
                     <Section title="概要">
                         <p>
-                            アルバイトにてFlatterの知識が必要となったため、勉強のために作成したアプリです。ユーザアカウントごとにデータをクラウド同期できる、シンプルなTODOアプリです。
+                            アルバイトにてFlutterの知識が必要となったため、勉強のために作成したアプリです。ユーザアカウントごとにデータをクラウド同期できる、シンプルなTODOアプリです。
                         </p>
                     </Section>
                     <Section title="デモ動画">
@@ -154,7 +154,7 @@ function App() {
                     <Section title="関連技術・関連知識">
                         <SkillsList
                             items={[
-                                "Flatter",
+                                "Flutter",
                                 "Dart",
                                 "PHP",
                                 "Laravel",
